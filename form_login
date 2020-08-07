@@ -1,0 +1,25 @@
+Dim o As Object
+Set o = CurrentDb.OpenRecordset("SELECT * FROM Table3_User WHERE IDUser='" & Tusername & "' AND Sandi='" & Tpassword & "'")
+
+If o.RecordCount > 0 Then
+
+'data ada
+DoCmd.Close
+DoCmd.OpenForm "Form4_Home", acNormal
+Forms!Form4_Home!lblid.Caption = o!IDUser
+Forms!Form4_Home!lblnama.Caption = o!Nama
+Forms!Form4_Home!lblstatus.Caption = o!Status
+
+If o!Status <> "Admin" Then
+Forms!Form4_Home!datapenduduk.Enabled = False
+Forms!Form4_Home!datakesehatan.Enabled = False
+Forms!Form4_Home!caripenduduk.Enabled = False
+Forms!Form4_Home!caridatakesehatan.Enabled = False
+
+End If
+
+Else
+
+'data tidak ada
+MsgBox "Maaf User Tidak Terdaftar"
+End If
