@@ -1,0 +1,31 @@
+// Cari Data Penduduk
+
+Me.Tnik.Value = DLookup("NIK", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tnokk.Value = DLookup("Nomor_KK", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tnama.Value = DLookup("Nama_Lengkap", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Ttempat.Value = DLookup("Tempat_Lahir", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Ttanggal.Value = DLookup("Tanggal_Lahir", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Talamat.Value = DLookup("Alamat", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Trt.Value = DLookup("RT", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Trw.Value = DLookup("RW", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tkelurahan.Value = DLookup("Kelurahan", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tkecamatan.Value = DLookup("Kecamatan", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tagama.Value = DLookup("Agama", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tperkawinan.Value = DLookup("Status_Perkawinan", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tpekerjaan.Value = DLookup("Pekerjaan", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Twarga.Value = DLookup("Kewarganegaraan", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+Me.Ofoto.Value = DLookup("Foto", "Table1_DataPenduduk", "NIK = '" & Me.Tnik.Value & "'")
+
+// Cari Data Kesehatan Penduduk
+
+Me.Tnik.Value = DLookup("NIK", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tnokk.Value = DLookup("Nomor_KK", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tnama.Value = DLookup("Nama_Lengkap", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Talamat.Value = DLookup("Alamat", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Trt.Value = DLookup("RT", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Trw.Value = DLookup("RW", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tkelurahan.Value = DLookup("Kelurahan", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tkecamatan.Value = DLookup("Kecamatan", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tkondisi.Value = DLookup("Kondisi_Kesehatan", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Tketerangan.Value = DLookup("Keterangan", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
+Me.Ofoto.Value = DLookup("Foto", "Table2_KondisiKesehatan", "NIK = '" & Me.Tnik.Value & "'")
